@@ -3,11 +3,11 @@ import React from 'react';
 import Slider from 'react-slick';
 import './Slideshow.css'; // Custom styles for the slideshow
 
-// Array of slide images
+// Array of slide texts
 const slides = [
-  'https://via.placeholder.com/800x400?text=Slide+1',
-  'https://via.placeholder.com/800x400?text=Slide+2',
-  'https://via.placeholder.com/800x400?text=Slide+3',
+  { text: 'Welcome to our Website', description: 'Explore our features and services.' },
+  { text: 'About Us', description: 'We are committed to delivering quality.' },
+  { text: 'Contact Us', description: 'Reach out for more information.' },
 ];
 
 // Slideshow component
@@ -27,8 +27,9 @@ const Slideshow = () => {
     <div className="slideshow-container">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index}>
-            <img src={slide} alt={`Slide ${index + 1}`} />
+          <div key={index} className="slide">
+            <h2>{slide.text}</h2>
+            <p>{slide.description}</p>
           </div>
         ))}
       </Slider>

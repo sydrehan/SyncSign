@@ -1,50 +1,83 @@
-/* src/components/Navbar.css */
-* {
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Left section: Logo and navigation links */
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-.navbar {
-    background-color: #333;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Right section: Login and Sign Up buttons */
+  .nav-right {
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    height: 70px; /* Adjust the height as needed */
-}
-
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between; /* Evenly distribute the links */
     align-items: center;
-    width: 100%; /* Full width to distribute the items */
-    max-width: 1200px; /* Optional: Limit max width for better appearance on large screens */
-    padding: 0 20px; /* Add some padding for spacing */
-}
-
-.nav-links li {
-    align-items: center;
-}
-
-.nav-links a {
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 8px 15px;
     color: white;
     text-decoration: none;
-    padding: 5px 15px; /* Adjust padding for link spacing */
-    font-size: 20px;
-}
-
-.nav-links a:hover {
-    color: #ff6347;
-}
-
-.nav-logo {
-    width: 50px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between logo and links */
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-.nav-logo:hover {
-    transform: scale(1.1); /* Slightly enlarge logo on hover */
-}
+    margin-left: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide links on smaller screens for now */
+    }
+  
+    .nav-right {
+      flex-direction: column;
+    }
+  
+    .nav-button {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+  

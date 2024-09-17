@@ -1,57 +1,75 @@
-/* src/components/Slideshow.css */
+/* Container for the entire slideshow */
 .slideshow-container {
-    width: 70%; /* Reduced width for a more compact slideshow */
-    margin: 30px auto; /* Added more margin for better spacing */
-    padding: 15px; /* Increased padding for better content spacing */
-    background-color: #f2f2f2; /* Softer background for a clean contrast */
-    border-radius: 15px; /* More pronounced rounded corners */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow for a floating effect */
-    transition: all 0.3s ease; /* Smooth transition on hover */
+  position: relative;
+  width: 50%; /* Set the width to 50% */
+  margin: auto;
+  padding: 20px;
+  background-color: transparent; /* Remove the background color */
+  border-radius: 0; /* Remove border radius for a clean edge */
+  box-shadow: none; /* Remove box-shadow for a flatter look */
 }
 
-.slideshow-container:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+/* Each slide styling */
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  border: none; /* Remove border */
+  border-radius: 0; /* No rounded corners */
+  padding: 20px;
+  text-align: center; /* Center text */
 }
 
-.slick-slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; /* More rounded corners for images */
-    transition: transform 0.3s ease; /* Smooth zoom on hover */
+/* Slide text */
+.slide h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
-.slick-slide img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+.slide p {
+  font-size: 1.2rem;
+  color: #dcdcdc;
 }
 
-h2 {
-    margin-bottom: 25px; /* Increased space between heading and slideshow */
-    text-align: center;
-    font-size: 34px;     /* Slightly larger font size */
-    font-weight: bold;   /* Added bold for emphasis */
-    color: #333;         /* Darker heading color */
+/* Custom arrows */
+.next, .prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Light background with transparency */
+  border: none;
+  color: #333;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
-p {
-    margin-bottom: 25px; /* Increased space between paragraph and slideshow */
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;    /* Added line height for better readability */
-    color: #666;         /* Slightly lighter text color */
+.next:hover, .prev:hover {
+  background-color: rgba(255, 255, 255, 1); /* Solid white on hover */
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .slideshow-container {
-        width: 90%; /* Full width on smaller screens */
-        padding: 10px;
-    }
+.next {
+  right: -40%; /* Position the next arrow to the right */
+}
 
-    h2 {
-        font-size: 28px; /* Adjusted heading size for mobile */
-    }
+.prev {
+  left: -40%; /* Position the previous arrow to the left */
+}
 
-    p {
-        font-size: 16px; /* Adjusted paragraph size for mobile */
-    }
+/* Dot styling */
+.slick-dots li button:before {
+  color: white;
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffcc00; /* Highlighted dot */
 }
