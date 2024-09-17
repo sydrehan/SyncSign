@@ -1,0 +1,12 @@
+.homepage-para{
+    text-align: center;
+}
+.homepage-para h2{
+    font-size: 44px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.homepage-para p{
+    color:dimgray;
+    font-size: 25px;
+    
+}

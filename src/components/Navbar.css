@@ -1,0 +1,50 @@
+/* src/components/Navbar.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 70px; /* Adjust the height as needed */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; /* Evenly distribute the links */
+    align-items: center;
+    width: 100%; /* Full width to distribute the items */
+    max-width: 1200px; /* Optional: Limit max width for better appearance on large screens */
+    padding: 0 20px; /* Add some padding for spacing */
+}
+
+.nav-links li {
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px; /* Adjust padding for link spacing */
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+.nav-logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and links */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
