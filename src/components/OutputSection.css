@@ -1,0 +1,16 @@
+.output-section {
+    background-color: #3f3f46; /* Equivalent to bg-zinc-600 */
+    padding: 1.5rem; /* Equivalent to p-6 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
+    height: 58vh; /* Set height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .output-section p {
+    color: #9ca3af; /* Equivalent to text-gray-400 */
+  }
+  

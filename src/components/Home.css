@@ -1,4 +1,6 @@
 .homepage-para{
+    position: relative;
+    top: 6vh;
     text-align: center;
 }
 .homepage-para h2{
