@@ -1,11 +1,14 @@
 .slideshow-container {
   position: relative;
+  display: block;
+  z-index: 10;
   width: 50%;
   margin: auto;
-  top: 7vh;
   padding: 20px;
   background-color: transparent;
+  top: 2vh; /* or try removing this */
 }
+
 
 .slide {
   position: relative;
@@ -61,14 +64,16 @@
   border: none;
   color: #333;
   font-size: 2rem;
-  padding: 10px 15px;
+  padding: 10px 20px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 80%;
   transition: background-color 0.3s ease;
 }
 
 .next:hover, .prev:hover {
-  background-color: rgba(255, 255, 255, 1);
+  color:#ffffff;
+  background-color: rgb(72, 71, 71);
+  transition:0.3s;
 }
 
 .next {
@@ -82,6 +87,7 @@
 .slick-dots li button:before {
   color: white;
   font-size: 10px;
+  padding-bottom: 50px;
 }
 
 .slick-dots li.slick-active button:before {

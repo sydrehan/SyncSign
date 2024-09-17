@@ -1,14 +1,22 @@
-.homepage-para{
-    position: relative;
-    top: 6vh;
+/* Home.css */
+.homepage-para {
+    position:relative;
+    top: 5vh;
+    display: block;
     text-align: center;
 }
-.homepage-para h2{
+/* Example CSS for debugging */
+
+  
+
+.homepage-para h2 {
     font-size: 44px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* Removes default margin from <h2> */
 }
-.homepage-para p{
-    color:dimgray;
+
+.homepage-para p {
+    color: dimgray;
     font-size: 25px;
-    
+    margin: 10px 0; /* Adds vertical spacing around <p> */
 }

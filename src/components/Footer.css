@@ -1,0 +1,75 @@
+/* Footer.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the container takes up at least the full height of the viewport */
+  }
+  
+  .main-content {
+    flex: 1; /* Allows the main content to grow and push the footer down */
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Adjust padding as needed */
+    width: 100%;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    margin-top: 30%;
+  }
+  
+  .footer a {
+    color: #e5b800; /* Link color */
+    text-decoration: none;
+    margin: 0 10px; /* Spacing between links */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #ffffff; /* Hover color */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .footer .social-media {
+    margin-top: 10px;
+  }
+  
+  .footer .social-media a {
+    color: #e5b800; /* Social media icon color */
+    font-size: 1.5rem; /* Size of icons */
+    margin: 0 15px; /* Spacing between icons */
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-media a:hover {
+    color: #ffffff; /* Icon color on hover */
+  }
+  
+  /* Optional: Responsive Design for Smaller Screens */
+  @media (max-width: 600px) {
+    .footer {
+      font-size: 12px;
+      padding: 15px 0;
+    }
+  
+    .footer a {
+      font-size: 12px;
+      margin: 0 5px;
+    }
+  
+    .footer .social-media a {
+      font-size: 1.2rem;
+      margin: 0 10px;
+    }
+  }
+  

@@ -1,14 +1,16 @@
-/* src/index.css or src/App.css */
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
- body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
- .App{
-    height: 70vh;
- }
+/* src/App.css */
+@import "../node_modules/slick-carousel/slick/slick.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: auto;
+  
+  display: block; /* Change to 100vh if you want the app to take up the full viewport height */
+}
+

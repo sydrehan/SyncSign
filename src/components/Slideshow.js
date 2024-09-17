@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-// src/components/Slideshow.js
 import React from 'react';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';  // Import Link for navigation
@@ -10,7 +8,7 @@ const slides = [
   {
     text: 'INTRODUCING SIGN SYNC',
     buttonText: 'Get Started',
-    buttonLink: '/landing',  // Updated link to navigate to the Landing page route
+    buttonLink: '/landing',  // Link to navigate to the Landing page route
     description: 'Our Sign Language translation tool bridges the gap between the deaf and hearing communities, enabling seamless communication. With support for multiple languages, we make conversation accessible for everyone.',
   },
   {
