@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SyncSign/static/css/main.b6c13de4.css",
+    "main.js": "/SyncSign/static/js/main.f05428f1.js",
+    "static/js/453.64512fd7.chunk.js": "/SyncSign/static/js/453.64512fd7.chunk.js",
+    "static/media/logo.png": "/SyncSign/static/media/logo.3d03f86af7ceb3967e78.png",
+    "static/media/slick.svg": "/SyncSign/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/SyncSign/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/SyncSign/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/SyncSign/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/SyncSign/index.html",
+    "main.b6c13de4.css.map": "/SyncSign/static/css/main.b6c13de4.css.map",
+    "main.f05428f1.js.map": "/SyncSign/static/js/main.f05428f1.js.map",
+    "453.64512fd7.chunk.js.map": "/SyncSign/static/js/453.64512fd7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6c13de4.css",
+    "static/js/main.f05428f1.js"
+  ]
+}
