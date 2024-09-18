@@ -1,40 +1,39 @@
 /* Center the content inside the upload section */
 .upload-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 98vh;
-    height: 75vh;
-    border: 2px dashed #ccc;
-  }
-  
-  /* Text styles for the webcam description */
-  .upload-section .description {
-    color: #999;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  /* Webcam container styling */
-  .upload-section .webcam-container {
-    width: 95vh;
-    height: 95vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.75rem;
-    overflow: hidden;
-  }
-  
-  /* Webcam video styling */
-  .upload-section .webcam-container video {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Set to full width of the parent */
+  height: 100vh; /* Adjust height to full screen if needed */
+  border: 2px dashed #ccc;
+}
+
+/* Text styles for the webcam description */
+.upload-section .description {
+  color: #999;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Webcam container styling */
+.upload-section .webcam-container {
+  width: 100%; /* Full width of the parent container */
+  height: 100%; /* Full height of the parent container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+/* Webcam video styling */
+.upload-section .webcam-container video {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
